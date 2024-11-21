@@ -20,11 +20,8 @@ jobs:
       with:
         node-version: latest
 
-    - name: Directory
-      run: cd client    
-
-    - name: Node Package Setup
-      run: npm install
-
-    - name: Build Validation
-      run: npm run build
+    - name: Setup and Build Validation
+      run: 
+        cd client  
+        npm install
+        npm run build
