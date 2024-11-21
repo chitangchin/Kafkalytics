@@ -1,0 +1,27 @@
+name: Build and Test Validation
+
+on: 
+    push:
+    pull_request:
+        branches: [ main ]
+    
+jobs:
+  build_and_test_validation:
+    name: build-and-test-validation-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+
+    - name: Node Package Setup
+      run: npm install
+
+    - name: Build Validation
+      run: npm run build
