@@ -20,6 +20,9 @@ jobs:
       with:
         node-version: latest
 
+    - name: Directory
+      run: cd client    
+
     - name: Node Package Setup
       run: npm install
 
