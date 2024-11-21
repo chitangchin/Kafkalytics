@@ -21,7 +21,7 @@ jobs:
         node-version: latest
 
     - name: Setup and Build Validation
-      run: 
+      run: |
         cd client  
         npm install
         npm run build
