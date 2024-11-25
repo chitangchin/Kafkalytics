@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Kafkalytics Server",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitangchin/Kafkalytics.git"
+  },
+  "keywords": [
+    "Kafka"
+  ],
+  "author": "chitangchin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chitangchin/Kafkalytics/issues"
+  },
+  "homepage": "https://github.com/chitangchin/Kafkalytics#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
