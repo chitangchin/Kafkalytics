@@ -3,6 +3,10 @@ Revamp of Open Source Product: [Lighthouse](https://github.com/oslabs-beta/Light
 
 Client Tech Stack:
 
-Vite
-- React
-- TypeScript
+- Vite
+  - React
+  - TypeScript
+
+Server Tech Stack:
+
+- Express.js
